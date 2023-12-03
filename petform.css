@@ -30,9 +30,9 @@ width: 130%;
 padding: 0;
 display: block;
 list-style-type: none;
-margin: 11px -30px;
+margin: 3px -30px;
 top: 0;
-
+font-family: cursive;
 float: right;
 position: fixed;
 }
@@ -141,6 +141,7 @@ input,select{
 }
 .form4-1{
 	display:flex;
+	align-items: flex-end;
 }
 #input5,#input6,#input7,#input8,#input9,#input10{
 	width: 48%;
@@ -150,7 +151,7 @@ input,select{
 	display: flex;
 }
 #input11-1{
-	width: 93%;
+	width: 94%;
 }
 #submit{
 	border: 0;
@@ -162,6 +163,10 @@ input,select{
     width: 96%;
     transition: all 0.3s ease;
 	cursor: pointer;
+}
+#submit1 a{
+	text-decoration: none;
+	color: inherit;
 }
 #footer {
     width: 100%; 
@@ -225,4 +230,57 @@ input,select{
 .ultimatefooter{
 	padding-top: 10px;
 	font-size: 20px;
+}
+
+
+.alert1 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  height: 30px;
+  width: 94%;
+  font-family: cursive;
+  background-color: #f44336;
+  color: white;
+}
+.alert2 ,.alert4, .alert5,.alert6 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  height: 30px;
+  font-family: cursive;
+  width: 94%;
+  background-color: #f44336;
+  color: white;
+}
+.alert7{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  height: 30px;
+  width: 96.8%;
+  font-family: cursive;
+  background-color: #f44336;
+  color: white;
+}
+.alert3{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  height: 30px;
+  width: 95%;
+  font-family: cursive;
+  background-color: #f44336;
+  color: white;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 32px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.closebtn:hover {
+  color: black;
 }
