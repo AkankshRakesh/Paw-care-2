@@ -3,7 +3,7 @@
 <head>
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <meta name="author" content="Akanksh,Vivek,Mehak">
+ <meta name="author" content="Akanksh">
 <meta name="description" content="website :>">
  <title>Pet Sitter Form</title>
  <link rel="stylesheet" href="petform.css">
@@ -31,12 +31,17 @@
 <div class="second">
 <div class="entry-text">
 <h2>Become An Pet Carian</h2>
-<form class="form-body" name="form" onsubmit="return submitform()">
+<form class="form-body" name="form" onsubmit="return submitform()" method="POST">
 	<ul id="form-body1">
 		<li id="form-1">
 			<h2 id="form-1-1">OWNER INFORMATION</h2>
 		</li>
-
+		<label id="xxxx" style="color: red; text-align: center;">
+					<div class="alert7" style="display:none;">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+ You have a few errors, please rectify and submit again
+</div>
+</label>
 		<li id="form-2">
 			<label class="form-2-1">Name</label>
 			<div class="form-2-2">
@@ -44,32 +49,58 @@
 					<span id="resultcon1">
 					<p id="resulttext1"></p>
 					</span>
+					<label for="input1-1" id="input1-1" style="color: red; text-align: center;">
+					<div class="alert1" style="display:none;">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+ Fill this please
+</div>
+					</label>
 					<input type="text" name="input1-1" id="input1-1">
 					<label for="input1-1">First*</label>
+					
 				</span>
 				<span id="input2">
+				
+					<label for="input2-1" id="input2-1" style="color: red; text-align: center;">
+					<div class="alert2" style="display:none;">
+					  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+					 Fill this please
+					</div>
+					</label>
 					<input type="text" name="input2-1" id="input2-1">
-					<label for="input2-1">Second</label>
+					<label for="input2-1">Second*</label>
 				</span>
 			</div>
 		</li>
 		<li id="form-3">
 			<label class="form-3-1">Address</label>
-			<div class="form-3-2">
-				<span id="input3">
+			<div class="form-3-2" style='padding-top: 20px;'>
+				<div id="input3" style="padding-bottom: 15px">
+					<label for="input3-1" id="input3-1" style="color: red; text-align: center;">
+					<div class="alert3" style="display:none;">
+					  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+					 Fill this please
+					</div>
+					</label>
 					<input type="text" name="input3-1" id="input3-1"><br>
 					<label for="input3-1">Street Address*</label>
-				</span>
-				<span id="input4">
+				</div>
+				<div id="input4" style="padding-bottom: 15px">
 					<input type="text" name="input4-1" id="input4-1">
 					<label for="input4-1">Address Line 2</label>
-				</span>
+				</div>
 			</div>
 		
 			<div class="form4-1">
 				<span id ="input5">
+				<label for="input5-1" id="input5-1" style="color: red; text-align: center;">
+					<div class="alert4" style="display:none;">
+					  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+					 Fill this please
+					</div>
+					</label>
 					<input type="text" name="input5-1" id="input5-1" >
-					<label for='input5-1'>City</label>
+					<label for='input5-1'>City*</label>
 				</span>
 				<span id="input6">
 					<select name="input5-2" id="input5-2" >
@@ -104,20 +135,27 @@
 						<option>Uttarakhand</option>
 						<option>Jammu & Kashmir</option>
 					</select>
-					<label for="input5-2">State</label>
+					<label for="input5-2">State*</label>
 				</span>
 			</div>
 		</li>
 		<li id="form-5">
 			<label class="form-5-1">Contacts</label>
-			<div class="form-5-2">
+			<div class="form-5-2" style="padding-top: 20px; display: flex; align-items: end;">
 				<span id="input7">
+				<label for="input7-1" id="input7-1" style="color: red; text-align: center;">
+					<div class="alert5" style="display:none;">
+					  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+					 Fill this properly using @ please
+					</div>
+					</label>
+					<label for="input7-1" id="input7-1"></label>
 					<input type="email" name="input7-1" id="input7-1">
 					<label for="input7-1">Email</label>
 				</span>
 				<span id="input8">
 					<input type="number" name="input8-1" id="input8-1">
-					<label for="input8-1">Phone*</label>
+					<label for="input8-1">Phone</label>
 				</span>
 			</div>
 		</li>
@@ -128,30 +166,42 @@
 		</li>
 		<li id="form2-2">
 			
-			<div class="form-6-2">
+			<div class="form-6-2" style="display: flex; align-items: end;">
 				<span id="input9">
-					<label class="form6-1" for="input9-1">Pet's Species*</label>
+				<label for="input9-1" id="input9-1" style="color: red; text-align: center;">
+					<div class="alert6" style="display:none;">
+					  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+					 We need your pet species please
+					</div>
+					</label>
+					
 					<input type="text" name="input9-1" id="input9-1">
+					<label class="form6-1" for="input9-1">Pet's Species*</label>
 				</span>
 				<span id="input10">
-					<label for="input10-1">Pet's Gender*</label>
+					
 					<select name="input10-1" id="input10-1" >
 						<option>Male</option>
 						<option>Female</option>
 						<option>Helicopter</option>
 					</select>
+					<label for="input10-1">Pet's Gender</label>
 				</span>
 			</div>
 		
 		`	<div class="form-7-2">
 				<span id="input11">
-					<label class="form7-1" for="input11-1">Pet's Breed*</label>
+					
 					<input type="text" name="input11-1" id="input11-1" >
+					<label class="form7-1" for="input11-1">Pet's Breed</label>
 				</span>
 			</div>
 		</li>
 		<li id="submit1">
 			<button type="submit" onclick="submitform(this.form)" id="submit">Submit</button>
+		</li>
+		<li id="admin" style="text-align: center;">
+			<p>Are you an admin? <a href="#">Click here</a></p>
 		</li>
 	<ul>
 </form>
